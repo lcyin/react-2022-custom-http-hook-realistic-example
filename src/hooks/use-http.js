@@ -25,7 +25,7 @@ const useHttp = () => {
       setError(err.message || 'Something went wrong!');
     }
     setIsLoading(false);
-  });
+  }, []);
   return {
     isLoading,
     error,
